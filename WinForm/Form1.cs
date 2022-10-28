@@ -83,5 +83,13 @@ namespace WinForm
             textBox2.Text = "";
             textBox3.Text = "";
         }
+
+        void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyValue == (char)Keys.Enter)
+            {
+                button1_Click_1(button1, null);
+            }
+        }
     }
 }
